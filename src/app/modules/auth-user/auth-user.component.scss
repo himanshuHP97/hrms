@@ -1,0 +1,29 @@
+.container-fluid {
+  padding-left: 0;
+}
+.login-container {
+  .contain-form {
+    width: 400px;
+    height: 99vh;
+    margin: 0 auto;
+    form {
+      position: absolute;
+      width: 400px;
+      height: 325px;
+      top: 25%;
+      .form-inner{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
+      label{
+        margin: 5px;
+      }
+      input {
+        width: 285px;
+        height: 35px;
+      }
+    }
+  }
+}

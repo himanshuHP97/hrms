@@ -1,0 +1,13 @@
+<mat-drawer-container *ngIf="isAuthenticated">
+  <mat-drawer mode="side" [opened]="isSidenavOpen">
+    <app-sidebar></app-sidebar>
+  </mat-drawer>
+  <mat-dialog-content>
+    <app-header
+      (toggleSidenav)="sidenavToggler()"
+      *ngIf="isAuthenticated">
+    </app-header>
+    <router-outlet></router-outlet>
+  </mat-dialog-content>
+  <app-footer></app-footer>
+</mat-drawer-container>

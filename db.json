@@ -1,0 +1,13 @@
+{
+  "login": [],
+  "employees": [],
+  "leaves": [],
+  "worklogs": [
+    {
+      "id": 1,
+      "startdate": "Jan 31,2023",
+      "title": "Event"
+    }
+  ],
+  "projects": []
+}

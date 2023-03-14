@@ -1,0 +1,50 @@
+.logo {
+  text-align: center;
+  color: white;
+  padding: 2.6em 1em;
+}
+mat-icon {
+  vertical-align: center;
+  margin-right: 15px;
+}
+
+mat-divider {
+  margin: 10px;
+  border-top-width: 2px;
+  border-color: white;
+}
+
+.mat-list-item {
+  color: rgb(255, 255, 255) !important;
+  font-size: 0.8em;
+  height: 44px !important;
+  margin-bottom: 4px;
+  ::ng-deep {
+    .mat-list-item-content {
+      border-radius: 5px;
+      margin: 0 8px;
+      &:hover {
+        background: #b5b5b5 !important;
+      }
+    }
+  }
+}
+
+.list-item-active {
+  color: rgb(255, 255, 255) !important;
+  ::ng-deep {
+    .mat-list-item-content {
+      background-color: #b5b5b5 !important;
+      &:hover {
+        background:  #ffffff !important;
+      }
+    }
+  }
+}
+
+.mat-subheader {
+  color: rebeccapurple;
+  font-size: 0.6em;
+  font-weight: 100;
+  letter-spacing: 1px;
+}

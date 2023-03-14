@@ -1,0 +1,17 @@
+<div *ngIf="images && images.length > 0" class="carousel-container">
+  <img
+    *ngFor="let item of images; let i = index"
+    [src]="item.imageSrc"
+    [alt]="item.imageAlt"
+    [ngClass]="{ 'image-active': selectedIndex === i }"
+  />
+</div>
+
+<!-- <div *ngIf="indicator" class="carousel-dot-container">
+  <img
+    *ngFor="let item of images; let i = index"
+    class="dot"
+    [ngClass]="{ active: selectedIndex === i }"
+    (click)="selectedImage(i)"
+  />
+</div> -->

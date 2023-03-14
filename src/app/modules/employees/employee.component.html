@@ -1,0 +1,22 @@
+<div class="container-fluid page">
+  <div class="page_box p-3 ms-2">
+    Employee Details
+    <mat-divider></mat-divider>
+  </div>
+  <div class="page_content position-relative">
+    <div class="page_content_data position-absolute text-center">
+      <mat-tab-group
+        fitInkBarToContent
+        mat-stretch-tabs="false"
+        mat-align-tabs="start"
+      >
+      <mat-tab label="View"></mat-tab>
+        <mat-tab label="Add">
+          <app-add-employees></app-add-employees>
+        </mat-tab>
+        <mat-tab label="Update"></mat-tab>
+        <mat-tab label="Delete"></mat-tab>
+      </mat-tab-group>
+    </div>
+  </div>
+</div>

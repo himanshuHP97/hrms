@@ -1,0 +1,210 @@
+<div class="container-fluid page">
+  <div class="page_box p-3 ms-2 text-start">
+   Add Employee Details
+    <mat-divider></mat-divider>
+  </div>
+  <div class="page_content position-relative">
+    <div class="page_content_data position-absolute text-center">
+      <form>
+        <div class="row mb-3">
+          <div class="col">
+            <label for="empId" class="form-label">Employee ID</label>
+            <input
+              type="text"
+              [disabled]="disableEmpId"
+              id="empId"
+              name="empId"
+              class="form-control"
+              formControlName="EmpId"
+            />
+          </div>
+          <div class="col">
+            <label for="gender" class="form-label">Gender</label>
+            <select
+              id="gender"
+              name="gender"
+              formControlName="Gender"
+              class="form-control"
+            >
+              <option>Select</option>
+              <option value="1">Male</option>
+              <option value="0">Female</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col">
+            <label for="salutation" class="form-label">Salutation</label>
+            <select
+              id="salutation"
+              name="salutation"
+              formControlName="Salutation"
+              class="form-control"
+            >
+              <option>Select</option>
+              <option value="Mr.">Mr.</option>
+              <option value="Ms.">Ms.</option>
+              <option value="Mrs.">Mrs.</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="firstName" class="form-label">First Name</label>
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              class="form-control"
+              formControlName="firstName"
+            />
+          </div>
+          <div class="col">
+            <label for="middleName" class="form-label">Middle Name</label>
+            <input
+              type="text"
+              id="middleName"
+              name="middleName"
+              class="form-control"
+              formControlName="middleName"
+            />
+          </div>
+          <div class="col">
+            <label for="lastName" class="form-label">Last Name</label>
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              class="form-control"
+              formControlName="lastName"
+            />
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col">
+            <label for="primaryContact" class="form-label">Primary Contact</label>
+            <input
+              type="text"
+              name="primaryContact"
+              id="primaryContact"
+              class="form-control"
+              formControlName="primaryContact"
+            />
+          </div>
+          <div class="col">
+            <label for="secondaryContact" class="form-label">Secondary Contact</label>
+            <input
+              type="text"
+              name="primaryContact"
+              id="secondaryContact"
+              class="form-control"
+              formControlName="secondaryContact"
+            />
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col">
+            <label for="personalEmail" class="form-label">Personal Email</label>
+            <input
+              type="text"
+              name="personalEmail"
+              id="personalEmail"
+              class="form-control"
+              formControlName="personalEmail"
+            />
+          </div>
+          <div class="col">
+            <label for="officialEmail" class="form-label">Official Email</label>
+            <input
+              type="text"
+              name="officialEmail"
+              id="officialEmail"
+              class="form-control"
+              formControlName="officialEmail"
+            />
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col">
+            <label for="permanentAddress" class="form-label">Permanent Address</label>
+            <textarea
+              name="permanentAddress"
+              id="permanentAddress"
+              class="form-control"
+              formControlName="permanentAddress"
+            ></textarea>
+          </div>
+          <div class="col">
+            <label for="presentAddress" class="form-label">Present Address</label>
+            <textarea
+              name="presentAddress"
+              id="presentAddress"
+              class="form-control"
+              formControlName="presentAddress"
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col">
+            <label for="department" class="form-label">Department</label>
+            <select
+              name="department"
+              id="department"
+              formControlName="department"
+              class="form-control"
+            >
+              <option value=""></option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="designation" class="form-label">Designation</label>
+            <select
+              name="designation"
+              id="designation"
+              formControlName="designationId"
+              class="form-control"
+            >
+              <option>Select</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col">
+            <label for="firstDay" class="form-label">First Day</label>
+            <input
+              type="date"
+              name="firstDay"
+              id="firstDay"
+              class="form-control"
+              formControlName="firstDay"
+            />
+          </div>
+          <div class="col">
+            <label for="confirmationDay" class="form-label">Confirmation Day</label>
+            <input
+              type="date"
+              name="confirmationDay"
+              id="confirmationDay"
+              class="form-control"
+              formControlName="confirmationDay"
+            />
+          </div>
+        </div>
+
+        <button
+          class="btn btn-success"
+          type="submit"
+        >Save</button>
+        |
+        <button
+        class="btn btn-danger"
+        type="submit"
+      >Cancel</button>
+      </form>
+    </div>
+  </div>
+</div>

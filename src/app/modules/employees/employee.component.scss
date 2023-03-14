@@ -1,0 +1,35 @@
+.page {
+  color: rgb(0, 0, 0);
+  padding: 0 1rem;
+  background: rgb(255, 255, 255);
+  &_box {
+    min-height: 70px;
+    background: transparent;
+    margin: 0 -1rem;
+    font-size: 20px;
+  }
+  &_content {
+    width: 100%;
+    min-height: auto;
+    background: white;
+    color: black;
+    &_data {
+      position: absolute;
+      width: 100%;
+      min-height: auto;
+      padding: 0 0 70px 0;
+    }
+  }
+}
+
+mat-divider {
+  margin-top: 5px;
+  border: 2px solid #2260ff;
+}
+::ng-deep .mat-mdc-tab-body-wrapper{
+  height: 300px;
+}
+
+
+
+
